@@ -11,7 +11,7 @@ function isLeapYear(year) {
 let leapYearList = '<ul>';
 
 for (let year = startYear; year <= endYear; year++) {
-    if (isLeapYear(year)) {    // Correctly passing 'year' to 'isLeapYear'
+    if (isLeapYear(year)) {
         leapYearList += `<li>${year}</li>`;
     }
 }
