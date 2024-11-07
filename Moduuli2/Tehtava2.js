@@ -11,7 +11,7 @@ for (let i = 1; i <= how_many; i++) {
 }
 
 let ordered_list = '<ol>';
-
+name.sort();
 for (let i = 0; i < name.length; i++) {
     ordered_list += `<li>${name[i]}</li>`;
 }
