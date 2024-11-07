@@ -15,7 +15,6 @@ name.sort();
 for (let i = 0; i < name.length; i++) {
     ordered_list += `<li>${name[i]}</li>`;
 }
-
-ordered_list += '</ol>'
+ordered_list += '</ol>';
 
 document.getElementById('result').innerHTML = ordered_list;
