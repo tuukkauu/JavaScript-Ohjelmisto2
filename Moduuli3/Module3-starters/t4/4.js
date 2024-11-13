@@ -17,9 +17,10 @@ const students = [
 
 let listitem = document.getElementById('target');
 
-for (let i = 0; i <= students.length; i++) {
-  let item = document.createElement('li');
-  item.textContent = students[i];
+for (let i = 0; i < students.length; i++) {
+  let item = document.createElement('option');
+  item.textContent = students[i].name;
+  item.value = students[i].id;
 
   listitem.appendChild(item);
 }
