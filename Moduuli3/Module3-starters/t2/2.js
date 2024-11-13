@@ -12,6 +12,6 @@ list3.textContent = "Third item";
 
 let targetElement = document.getElementById('target');
 
-targetElement.appendChild(list1)
-targetElement.appendChild(list2)
-targetElement.appendChild(list3)
+targetElement.appendChild(list1);
+targetElement.appendChild(list2);
+targetElement.appendChild(list3);
