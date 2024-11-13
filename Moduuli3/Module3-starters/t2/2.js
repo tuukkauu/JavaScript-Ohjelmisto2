@@ -1,12 +1,17 @@
 'use script'
 
-let unordlist = '<ul>'
+let list1 = document.createElement('li');
+list1.textContent = "First item";
 
-unordlist += '<li>First item</li>'
-unordlist += '<li>Second item</li>'
-unordlist += '<li>Third item</li>'
+let list2 = document.createElement('li');
+list2.className = 'my-item'
+list2.textContent = "Second item";
 
-unordlist += '</ul>';
+let list3 = document.createElement('li');
+list3.textContent = "Third item";
 
+let targetElement = document.getElementById('target');
 
-document.createElement('target')
+targetElement.appendChild(list1)
+targetElement.appendChild(list2)
+targetElement.appendChild(list3)
