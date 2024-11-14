@@ -95,3 +95,32 @@ const picArray = [
 // add your code here
 
 
+let itemElement = document.getElementById('pictures')
+  for (let i = 0; i < picArray.length; i++) {
+    const item = document.createElement('article');
+    item.classList.add('card')
+
+    const title = document.createElement('h2');
+    title.textContent = picArray[i].title;
+    item.appendChild(title)
+
+    const figure = document.createElement('figure');
+    const img = document.createElement('img');
+    img.src = picArray[i].image.medium;
+    img.alt = picArray[i].title;
+    figure.appendChild(img)
+
+    let figurecaption = document.createElement('figcaption')
+    figurecaption.textContent = picArray[i].caption;
+    figure.appendChild(figurecaption)
+
+    let description = document.createElement('p')
+    description.textContent = picArray[i].description
+
+
+    item.appendChild(figure)
+    item.appendChild(title);
+    item.appendChild(description)
+
+    itemElement.appendChild(item)
+  }
