@@ -1,6 +1,6 @@
 'use strict'
 
 
-console.log(body.button)
-
-alert('Button Clicked')
+document.querySelector('button').addEventListener('click', function() {
+  alert('Button Cliked');
+});
