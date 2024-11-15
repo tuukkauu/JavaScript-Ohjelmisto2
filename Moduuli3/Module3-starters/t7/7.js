@@ -1,14 +1,16 @@
-'use strict'
+'use strict';
+
+const trigger = document.querySelector('#trigger');
+const target = document.querySelector('#target');
 
 
-const pic = document.querySelector('#target');
 
-pic.addEventListener('mouseover', function() {
-  document.querySelector('#trigger', src='picB.jpg');
-})
+trigger.addEventListener('mouseover', function() {
+  target.src = 'img/picB.jpg';
+});
 
-pic.addEventListener('mouseout', function() {
-  document.querySelector('#target')
-})
+trigger.addEventListener('mouseout', function() {
+  target.src = 'img/picA.jpg';
+});
 
 
