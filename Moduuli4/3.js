@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
       img.alt = tvShow.show.name;
 
       // Yhteenveto div
-
       const summary = document.createElement('div');
       summary.innerHTML = tvShow.show.summary || 'No summary available.';
 
